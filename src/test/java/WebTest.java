@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
@@ -15,6 +16,7 @@ public class WebTest {
         driver.get("https://petstore.octoperf.com/actions/Catalog.action");
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
+
         driver.close();
         driver.quit();
     }
